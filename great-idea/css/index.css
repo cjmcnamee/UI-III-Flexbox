@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,169 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+header nav {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header nav a {
+	padding: 10px;
+	margin-left: 20px;
+	color: gray;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	font-weight: bold;
+	background-color: gray;
+	color: #000000;
+}
+
+header nav img {
+	margin-left: 100px;
+}
+
+.title {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.title .header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title .header h1 {
+	font-size: 70px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.title .header .innovation {
+	height: 70px;
+	width: 300px;
+}
+
+.title .header .on {
+	height: 70px;
+	width: 80px;
+}
+
+.title .header .demand {
+	height: 70px;
+	width: 210px;
+}
+
+.title .header button {
+	font-family: 'Titillium Web';
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	border: 1.5px solid #000000;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 5px 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+
+
+.title .header button:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+hr {
+	margin-top: 40px;
+	border: 1.2px solid black;
+}
+
+.section1 {
+	height: 120px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.section1 .features {
+	padding: 10px;
+	height: 100px;
+	width: 400px;
+}
+
+.section1 .about {
+	padding: 10px;
+	height: 100px;
+	width: 400px;
+}
+
+.middle-img {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.section2 .services {
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+}
+
+.section2 .product {
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+}
+
+.section2 .vision {
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+}
+
+footer {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 180px;
+}
+
+footer h3 {
+	width: 5px;
+	height: 5px;
+}
+
+footer p {
+	height: 20px;
+	width: 180px;
+}
+
+h6 {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 120px;
+}
